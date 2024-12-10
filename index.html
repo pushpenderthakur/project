@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+</head>
+<body>
+    <!--header start here-->
+    <header>
+        <div class="top-header"><!--top-header-->
+            <!--container strt here-->
+            <div class="container">
+                <div class="flex row"><!--row-->
+                    <!--brand name (logo)-->
+                    <div class="brand-name">
+                        <a href="#"><img src="src/images/logo.png" alt="logo"></a>
+                    </div>
+                    <!--end logo here-->
+                    <!--search and menu-->
+                    <div class="search-and-menu">
+                        <!--search-->
+                        <div class="search">
+                            
+                            <input type="text" placeholder="Search for products, brands and more">
+                        </div>
+                        <!--/.end search-->
+                        <!--lang-->
+                        <div class="lang">
+                            <icon><img src="/src/icons/globe-icon.png" alt="glob"></icon>
+                            <select id="language" onchange="updateFlag(this)">
+                                <option>Eng</option>
+                                <option>Span</option>
+                                <option>Fre</option>
+                                <option>Ger</option>
+                                <option>Chi</option>
+                            </select>
+                        </div>
+                        <!--/.end lang-->
+                        <!--top-manu-->
+                        <div class="top-manu">
+                            <label class="menu-toggle"><span></span> <span></span> <span></span> </label>
+                            <input type="checkbox">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">My Blance</a></li>
+                                <li><a href="#">USD</a></li>
+                            </ul>
+                        </div>
+                        <!--/.end top-menu-->
+                    </div>
+                    <!--/.end search and menu-->
+                    <!--user box header-->
+                    <div class="user-box-header">
+                        <!--2fa-->
+                        <div class="2fa">
+                            <a href="#"><img src="/src/icons/2fa-sec-icon.png" alt="2fa-sec-icon">2FA Security</a>
+                        </div>
+                        <!--/.end 2fa-->
+                        <!--user header-->
+                        <div class="user-header">
+                            <div class="user-icon">
+                                <img src="/src/icons/user-icon.png" alt="user-icon">
+                            </div>
+                            <div class="user-info-header">
+                                <p>Welcome: <a href="#">Adminstrator</a></p>
+                                <p>Account Type:<a href="#">Admin</a></p>
+                            </div>
+                        </div>
+                        <!--./end user header-->
+                    </div>
+                    <!--/.end user box-->
+                </div><!--/.end row-->
+            </div>
+            <!--container end here-->
+        </div><!--./end top header--> 
+        <!--header-bottom-->
+        <div class="header-bottom">
+            <!--containere start here-->
+            <div class="container">
+                <!--side-menu-icon-->
+                <div class="side-bar-menu">
+                    <input type="checkbox" class="menu-open">
+                    <label class="side-menu-toggle" href="#"><span></span><span></span><span></span></label>
+                    <div class="side-bar-menu-box">
+                        <div class="inner-box">
+                            <div class="logo-box-side">
+                                <a href="#"><img src="src/images/logo.png" alt="logo"></a>
+                                <a class="close-menu" href="#"><span></span><span></span></a>
+                            </div>
+                            <div class="side-menu">
+                                <ul>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Mail</a></li>
+                                    <li><a href="#">Info Canter</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">My Wallet</a></li>
+                                    <li><a href="#">My Purchasees</a></li>
+                                    <li><a href="#">My Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Welcome To Abcd Market </p>
+                </div>
+                <!--./end side-menu-icon-->
+                <!--user menu srart-->
+                <div class="user-menu">
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Mail</a></li>
+                        <li><a href="#">Info Canter</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">My Wallet</a></li>
+                        <li><a href="#">My Purchasees</a></li>
+                        <li><a href="#">My Profile</a></li>
+                    </ul>
+                </div><!--./end user menu-->
+                <!--coins and button start-->
+                <div class="coins-button">
+                    <ul>
+                        <li><a class="bit-coin" href="#"><img src="/src/icons/bitcoin-icon.png" alt="bitcoin-icon"> 0.00215</a></li>
+                        <li><a class="monero-coin" href="#"><img src="/src/icons/monero-icon.png" alt="monero-icon">0.00021</a></li>
+                        <li><a class="btn btn-yellow" href="#">Logout </a></li>
+                    </ul>
+                </div><!--./end coins button-->
+            </div>
+            <!--end container-->
+        </div>
+        <!--end header bottom-->
+        
+    </header><!--end header here./-->
+    <!--main content start here-->
+    <section class="main-content">
+        <!--container start here-->
+        <div class="container">
+            <!--filter-box-->
+            <div class="filter-box">
+                <label for="filter-mob">Product Filter</label>
+                <input type="checkbox" name="filter-mob">
+                <form>
+                    <div class="input-field">
+                        <p>Filter by: </p>
+                    </div>
+                    <div class="input-field">
+                        <label>Type:</label>
+                        <select>
+                            <option>Select</option>
+                            <option>option1</option>
+                            <option>option2</option>
+                            <option>option3</option>
+                            <option>option4</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Short By:</label>
+                        <select>
+                            <option>Select</option>
+                            <option>option1</option>
+                            <option>option2</option>
+                            <option>option3</option>
+                            <option>option4</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Vendor:</label>
+                        <input type="text" placeholder="Search Products">
+                    </div>
+                    <div class="input-field">
+                        <label>Country From:</label>
+                        <select>
+                            <option>Select Country</option>
+                            <option>option1</option>
+                            <option>option2</option>
+                            <option>option3</option>
+                            <option>option4</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label>Ships To:</label>
+                        <select>
+                            <option>Select Country</option>
+                            <option>option1</option>
+                            <option>option2</option>
+                            <option>option3</option>
+                            <option>option4</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <button class="btn btn-yellow" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!--./end filter-box-->
+            <!--product and categories-->
+            <div class="product-categories">
+                <!--inner-row-->
+                <div class="inner-row">
+                    <!--categories box-->
+                    <div class="categories-box">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="#">Home Decor</a></li>
+                            <li><a href="#">Bedding & Bath</a></li>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Cameras & Photography</a></li>
+                            <li><a href="#">Smart Home Devices</a></li>
+                            <li><a href="#">Men’s Clothing</a></li>
+                            <li><a href="#">Women’s Clothing</a></li>
+                        </ul>
+                    </div><!--./end-->
+                    <!--products main-->
+                    <div class="products-main">
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                        <!--product box start here-->
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="src/images/Print (2).png" alt="product">
+                            </div>
+                            <div class="product-content-info">
+                                <h2>Had moving replenish fruitful sixth, dry multiply. Over, lights seed day.</h2>
+                                <div class="details">
+                                    <p><strong>Sold by</strong> <span class="seller-name">Gethigh025</span></p>
+                                    <p><strong>Type</strong> <span class="type-tag">physical</span></p>
+                                    <p><strong>Categories</strong> <span class="category-tag">CURRENCY</span></p>
+                                </div>
+                            </div>
+                            <div class="price-coins">
+                                <div class="pricing">
+                                    <p class="price">$650:20 USD</p>
+                                    <button class="btn btn-gold">Buy Now</button>
+                                </div>
+                                <div class="coins-box">
+                                    <div class="bit-box">
+                                        <img src="src/images/bitcoin-icon.png">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                    <div class="monero-box">
+                                        <img src="src/images/monero.png ">
+                                        <a href="#">BTC 0.000254</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-view-sale-box">
+                                <div class="view-sale-box">
+                                    <ul>
+                                        <li>View: <a href="#">2</a></li>
+                                        <li>|</li>
+                                        <li>Sale: <a href="#">0</a></li>
+                                    </ul>
+                                </div>
+                                <div class="rating">⭐⭐⭐⭐☆</div>
+                            </div>
+                        </div>
+                        <!--./end product box-->
+                    </div><!--./end-->
+                </div><!--./end inner row-->
+            </div>
+            <!--./ end product and categories-->
+        </div>
+        <!--./end container-->
+    </section>
+    <!-- sec end here./-->
+</body>
+</html>
